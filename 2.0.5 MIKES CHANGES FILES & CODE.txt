@@ -1,0 +1,600 @@
+//--------------------------------------------------------------
+//VERSION 2.0.5m
+//--------------------------------------------------------------
+
+//--------------------------------------------------------------
+//ITEM PRICE CHANGES (EVO STONES MATCH HG&SS)
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\items.h
+	ITEM_MASTER_BALL 		0->30000 	(CUSTOM COST OF 25 ULTRA BALLS)
+	ITEM_FIRE_STONE			10000->3000
+	ITEM_WATER_STONE		10000->3000
+	ITEM_THUNDER_STONE		10000->3000
+	ITEM_LEAF_STONE			10000->3000
+	ITEM_ICE_STONE			10000->3000
+	ITEM_SUN_STONE			10000->3000
+	ITEM_MOON_STONE			10000->3000
+	ITEM_SHINY_STONE		10000->3000
+	ITEM_DUSK_STONE			10000->3000
+	ITEM_DAWN_STONE			10000->3000
+	ITEM_CHIPPED_POT 		38000->3000
+	ITEM_GALARICA_CUFF 		20000->3000
+	ITEM_GALARICA_WREATH 	20000->3000
+	ITEM_DRAGON_SCALE		20000->3000
+	ITEM_UPGRADE			20000->3000
+	ITEM_PROTECTOR			20000->3000
+	ITEM_ELECTIRIZER		20000->3000
+	ITEM_MAGMARIZER			20000->3000
+	ITEM_DUBIOUS_DISC		20000->3000
+	ITEM_REAPER_CLOTH		20000->3000
+	ITEM_PRISM_SCALE		20000->3000
+	ITEM_OVAL_STONE			20000->3000
+	ITEM_KINGS_ROCK			10000->3000	GEN-9	5000->3000	GEN-7
+	ITEM_METAL_COAT			20000->3000
+	ITEM_RAZOR_CLAW			15000->3000 GEN-9	5000->3000	GEN-7
+	ITEM_RAZOR_FANG			15000->3000 GEN-9	5000->3000	GEN-7
+	ITEM_BLACK_AUGURITE		20000->3000
+	ITEM_LINKING_CORD		20000->3000
+	ITEM_PEAT_BLOCK			20000->3000
+	ITEM_CARBOS				10000->1000
+	ITEM_ZINC				10000->1000
+	ITEM_CALCIUM			10000->1000
+	ITEM_IRON				10000->1000
+	ITEM_PROTEIN			10000->1000
+	ITEM_HP_UP				10000->1000
+	ITEM_PP_UP				10000->450
+	ITEM_PP_MAX				10000->1350
+
+//--------------------------------------------------------------
+//ADD ITEMS TO MARTS (8 BADGES)
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\shop.c
+static const u16 sShopInventory_EightBadges[] = {
+    ITEM_POKE_BALL,
+    ITEM_GREAT_BALL,
+    ITEM_ULTRA_BALL,
+	ITEM_MASTER_BALL,
+    ITEM_POTION,
+    ITEM_SUPER_POTION,
+    ITEM_HYPER_POTION,
+    ITEM_MAX_POTION,
+    ITEM_FULL_RESTORE,
+	ITEM_ETHER,
+    ITEM_MAX_ETHER,
+    ITEM_ELIXIR,
+    ITEM_MAX_ELIXIR,
+    ITEM_FULL_HEAL,
+    ITEM_ANTIDOTE,
+    ITEM_BURN_HEAL,
+    ITEM_ICE_HEAL,
+    ITEM_AWAKENING,
+    ITEM_PARALYZE_HEAL,
+    ITEM_REVIVE,
+	ITEM_MAX_REVIVE,
+    ITEM_REPEL,
+    ITEM_SUPER_REPEL,
+    ITEM_MAX_REPEL,
+    ITEM_FLUFFY_TAIL,
+    ITEM_ESCAPE_ROPE,
+	ITEM_RARE_CANDY,
+    ITEM_NONE
+};
+
+static const u16 sShopInventory_EightBadges_PC[] = {
+    ITEM_POKE_BALL,
+    ITEM_GREAT_BALL,
+    ITEM_ULTRA_BALL,
+	ITEM_MASTER_BALL,
+    ITEM_POTION,
+    ITEM_SUPER_POTION,
+    ITEM_HYPER_POTION,
+    ITEM_MAX_POTION,
+    ITEM_FULL_RESTORE,
+    ITEM_ETHER,
+    ITEM_MAX_ETHER,
+    ITEM_ELIXIR,
+    ITEM_MAX_ELIXIR,
+    ITEM_FULL_HEAL,
+    ITEM_ANTIDOTE,
+    ITEM_BURN_HEAL,
+    ITEM_ICE_HEAL,
+    ITEM_AWAKENING,
+    ITEM_PARALYZE_HEAL,
+    ITEM_REVIVE,
+	ITEM_MAX_REVIVE,
+    ITEM_REPEL,
+    ITEM_SUPER_REPEL,
+    ITEM_MAX_REPEL,
+    ITEM_FLUFFY_TAIL,
+    ITEM_ESCAPE_ROPE,
+	ITEM_RARE_CANDY,
+    ITEM_NONE
+};
+
+//--------------------------------------------------------------
+//ADD ITEMS TO (GOLDENROD) MART
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\GoldenrodCity_DepartmentStore_2F_hns\scripts.inc
+//ADD MASTER_BALL, LEAF_STONE, ICE_STONE, MOON_STONE, SUN_STONE, MAX_REVIVE
+GoldenrodDeptStore2_Pokemart:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_MASTER_BALL
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_ICE_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_POTION
+	.2byte ITEM_SUPER_POTION
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_REVIVE
+	.2byte ITEM_MAX_REVIVE
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_AWAKENING
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_REPEL
+	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_MAX_REPEL
+	pokemartlistend
+	
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\GoldenrodCity_DepartmentStore_4F_hns\scripts.inc
+//ADD ITEM_PP_UP, ITEM_PP_MAX
+GoldenrodDeptStore4_Pokemart:
+	.2byte ITEM_PROTEIN
+	.2byte ITEM_CALCIUM
+	.2byte ITEM_IRON
+	.2byte ITEM_ZINC
+	.2byte ITEM_CARBOS
+	.2byte ITEM_HP_UP
+	.2byte ITEM_PP_UP
+	.2byte ITEM_PP_MAX
+	pokemartlistend
+
+//--------------------------------------------------------------
+//ADD ITEMS TO (SAFARI) MART
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\SafariZoneGate_hns\scripts.inc
+//ADD ITEM_PP_UP, ITEM_PP_MAX
+SafariZoneGate_Pokemart_VitaminGuru:
+	.2byte ITEM_PROTEIN
+	.2byte ITEM_IRON
+	.2byte ITEM_CARBOS
+	.2byte ITEM_ZINC
+	.2byte ITEM_CALCIUM
+	.2byte ITEM_HP_UP
+	.2byte ITEM_PP_UP
+	.2byte ITEM_PP_MAX
+	.2byte ITEM_NONE
+	release
+	end
+
+//--------------------------------------------------------------
+//POKEMON CAN MAX ALL EVs
+//--------------------------------------------------------------	
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\include\constants\pokemon.h
+//change EVs combined MAX from 510->1530 (stronger pokemon: +63 stat max @ lvl 100)
+#define MAX_TOTAL_EVS 1530
+
+//--------------------------------------------------------------
+//ELM GIVES 5 MASTER BALLS (instead of 1)
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\NewBarkTown_Lab_hns\scripts.inc
+NewBarkTown_Lab_EventScript_ElmMasterBall::
+	lock
+	faceplayer
+	msgbox NewBarkTown_Lab_Text_ElmGiveMasterBall1, MSGBOX_DEFAULT
+	giveitem ITEM_MASTER_BALL, 5
+	msgbox NewBarkTown_Lab_Text_ElmGiveMasterBall2, MSGBOX_DEFAULT
+	closemessage
+
+//--------------------------------------------------------------
+//ADD MORE ODD EGGS (MANTYKE, BONSLY, HAPPINY, MIME_JR, 
+//                   CHIKORITA, CYNDAQUIL, TOTODILE, EEVEE)
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\scrcmd.c
+//add starters to odd eggs & change to 16 species lines 3078-3080
+static const u16 sOddEggSpecies[16] = {
+    SPECIES_NONE,        // [0] unused
+    SPECIES_PICHU,       // 1
+    SPECIES_CLEFFA,      // 2
+    SPECIES_IGGLYBUFF,   // 3
+    SPECIES_TYROGUE,     // 4
+    SPECIES_SMOOCHUM,    // 5
+    SPECIES_ELEKID,      // 6
+    SPECIES_MAGBY,       // 7
+    SPECIES_MANTYKE,     // 8
+    SPECIES_BONSLY,      // 9
+    SPECIES_HAPPINY,     // 10
+    SPECIES_MIME_JR,     // 11
+	SPECIES_CHIKORITA,   // 12
+	SPECIES_CYNDAQUIL,   // 13
+	SPECIES_TOTODILE,    // 14
+	SPECIES_EEVEE,       // 15
+
+//--------------------------------------------------------------
+//ADD PASSWORDS FOR NEW ODD EGGS
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\easy_chat.c
+//Add passwords for starters & change to 15 passwords
+static const u16 sInterviewPasswords[15][4] = {
+    { EC_WORD_STATIC, EC_WORD_ELECTRIC, EC_WORD_WAAAH, EC_WORD_PLAY },			//PICHU
+    { EC_WORD_CUTE_CHARM, EC_WORD_NORMAL, EC_WORD_EEK, EC_WORD_LOOKS },			//CLEFFA
+    { EC_WORD_CUTE_CHARM, EC_WORD_NORMAL, EC_WORD_LALALA, EC_WORD_SLEEP },		//IGGLYBUFF
+    { EC_WORD_GUTS, EC_WORD_FIGHTING, EC_WORD_HIYAH, EC_WORD_TRAINS },			//TYROGUE
+    { EC_WORD_OBLIVIOUS, EC_WORD_ICE, EC_WORD_EHEHE, EC_WORD_SHOW },			//SMOOCHUM
+    { EC_WORD_STATIC, EC_WORD_ELECTRIC, EC_WORD_OI_OI_OI, EC_WORD_STORES },		//ELEKID
+    { EC_WORD_FLAME_BODY, EC_WORD_FIRE, EC_WORD_TCH, EC_WORD_ANGERS },			//MAGBY
+    { EC_WORD_SWIFT_SWIM, EC_WORD_WATER, EC_WORD_WAAAH, EC_WORD_SINK },			//MANTYKE
+    { EC_WORD_STURDY, EC_WORD_ROCK, EC_WORD_URGH, EC_WORD_PRETEND },			//BONSLY
+    { EC_WORD_NATURAL_CURE, EC_WORD_NORMAL, EC_WORD_SIGH, EC_WORD_TRUST },		//HAPPINY
+    { EC_WORD_SOUNDPROOF, EC_WORD_PSYCHIC, EC_WORD_HMM, EC_WORD_WORRY },		//MIME_JR
+	{ EC_WORD_OVERGROW, EC_WORD_GRASS, EC_WORD_TCH, EC_WORD_PLEASE},			//CHIKORITA
+	{ EC_WORD_BLAZE, EC_WORD_FIRE, EC_WORD_GRAAAH, EC_WORD_TRAINS},				//CYNDAQUIL
+	{ EC_WORD_TORRENT, EC_WORD_WATER, EC_WORD_GWAH, EC_WORD_ANGERS},			//TOTODILE
+	{ EC_WORD_RUN_AWAY, EC_WORD_NORMAL, EC_WORD_EEK, EC_WORD_CHANGE},			//EEVEE
+};
+
+//--------------------------------------------------------------
+//ADD NEW ODD EGGS INFO TO BOOK SHELVES
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\include\constants\help_window.h
+// Add new IDs here
+enum {
+    HELP_DEMO_WINDOW,
+    HELP_GAMESTART_WINDOW,
+    HELP_TRADE_WINDOW,
+    HELP_TELEPORTER_WINDOW,
+    HELP_SINJOH_WINDOW,
+    HELP_ALOLA_WINDOW,
+    HELP_DAYCARE1_WINDOW,
+	HELP_DAYCARE1_WINDOW2,	//page 2
+    HELP_DAYCARE2_WINDOW,
+	HELP_DAYCARE2_WINDOW2,	//page 2
+    HELP_DAYCARE3_WINDOW,
+	HELP_DAYCARE3_WINDOW2,	//page 2
+    HELP_DAYCARE4_WINDOW,
+	HELP_DAYCARE4_WINDOW2,	//page 2
+    HELP_POKEBLOCK_WINDOW,
+    HELP_GOLD_POKEBLOCK_WINDOW,
+    HELP_COUNT
+};
+
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\Route34_DayCare_hns\scripts.h
+Route34_DayCare_Bookshelf1::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf1, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE1_WINDOW
+	helpwindow HELP_DAYCARE1_WINDOW2	//page 2
+	release
+	end
+
+Route34_DayCare_Bookshelf2::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf2, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE2_WINDOW
+	helpwindow HELP_DAYCARE2_WINDOW2	//page 2
+	release
+	end
+
+Route34_DayCare_Bookshelf3::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf3, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE3_WINDOW
+	helpwindow HELP_DAYCARE3_WINDOW2	//page 2
+	release
+	end
+
+Route34_DayCare_Bookshelf4::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf4, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE4_WINDOW
+	helpwindow HELP_DAYCARE4_WINDOW2	//page 2
+	release
+	end
+
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\help_window.h
+	[HELP_DAYCARE1_WINDOW] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON ABILITIES"),
+        .desc = COMPOUND_STRING("PICHU's ability is STATIC.\n"
+                                "CLEFFA's ability is CUTE CHARM.\n"
+                                "IGGLYBUFF's ability is CUTE CHARM.\n"
+                                "TYROGUE's ability is GUTS.\n"
+                                "SMOOCHUM's ability is OBLIVIOUS.\n"
+                                "ELEKID's ability is STATIC.\n"
+                                "MAGBY's ability is FLAME BODY.\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE1_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON ABILITIES"),
+        .desc = COMPOUND_STRING("CHIKORITA's ability is OVERGROW.\n"
+								"CYNDAQUIL's ability is BLAZE.\n"
+								"TOTODILE's ability is TORRENT.\n"
+								"EEVEE's ability is RUN_AWAY.\n"
+								"MANTYKE's ability is SWIFT SWIM.\n"
+								"BONSLY's ability is STURDY.\n"
+								"HAPPINY's ability is NATURAL CURE.\n"
+								"MIME_JR's ability is SOUNDPROOF.\n"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+    [HELP_DAYCARE2_WINDOW] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON TYPES"),
+        .desc = COMPOUND_STRING("PICHU is ELECTRIC type.\n"
+                                "CLEFFA is NORMAL type.\n"
+                                "IGGLYBUFF is NORMAL type.\n"
+                                "TYROGUE is FIGHTING type.\n"
+                                "SMOOCHUM is ICE type.\n"
+                                "ELEKID is ELECTRIC type.\n"
+                                "MAGBY is FIRE type.\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE2_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON TYPES"),
+        .desc = COMPOUND_STRING("CHIKORITA's is GRASS type.\n"
+								"CYNDAQUIL's is FIRE type.\n"
+								"TOTODILE's is WATER type.\n"
+								"EEVEE's is NORMAL type.\n"
+								"MANTYKE's is WATER type.\n"
+								"BONSLY's is ROCK type.\n"
+								"HAPPINY's is NORMAL type.\n"
+								"MIME_JR's is PSYCHIC type.\n"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+    [HELP_DAYCARE3_WINDOW] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON CRIES"),
+        .desc = COMPOUND_STRING("PICHU says WAAAH.\n"
+                                "CLEFFA says EEK.\n"
+                                "IGGLYBUFF says LALALA.\n"
+                                "TYROGUE says HIYAH.\n"
+                                "SMOOCHUM says EHEHE.\n"
+                                "ELEKID says OI, OI, OI.\n"
+                                "MAGBY says TCH.\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE3_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON CRIES"),
+        .desc = COMPOUND_STRING("CHIKORITA says TCH.\n"
+								"CYNDAQUIL says GRAAAH.\n"
+								"TOTODILE says GWAH.\n"
+								"EEVEE says EEK.\n"
+								"MANTYKE says WAAAH.\n"
+								"BONSLY says URGH.\n"
+								"HAPPINY says SIGH.\n"
+								"MIME_JR says HMM.\n"
+								
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+    [HELP_DAYCARE4_WINDOW] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON ACTIONS"),
+        .desc = COMPOUND_STRING("PICHU likes to PLAY all day.\n"
+                                "CLEFFA LOOKS at the moon.\n"
+                                "IGGLYBUFF puts them to SLEEP.\n"
+                                "TYROGUE TRAINS constantly.\n"
+                                "SMOOCHUM likes to SHOW off.\n"
+                                "ELEKID STORES up charge.\n"
+                                "MAGBY often ANGERS\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE4_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON ACTIONS"),
+        .desc = COMPOUND_STRING("CHIKORITA likes to PLEASE.\n"
+								"CYNDAQUIL TRAINS hard.\n"
+								"TOTODILE ANGERS easily.\n"
+								"EEVEE likes CHANGE.\n"
+								"MANTYKE SINK low in water.\n"
+								"BONSLY likes to PRETEND.\n"
+								"HAPPINY has your TRUST.\n"
+								"MIME_JR always WORRY.\n"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+
+//--------------------------------------------------------------
+//GET ALL ODD EGGS
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\Route34_DayCare_hns\scripts.inc
+Route34_DayCare_EventScript_Clerk::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_ODD_EGG, Route34_DayCare_EventScript_ClerkAfter
+	msgbox Route34_DayCare_Text_ClerkBefore, MSGBOX_DEFAULT
+	specialvar VAR_0x8004, GetMaxPartySize @ tx_randomizer_and_challenges
+	getpartysize
+	goto_if_eq VAR_RESULT, VAR_0x8004, Route34_DayCare_EventScript_ClerkPartyFull
+	msgbox Route34_DayCare_Text_ClerkQuestion, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_0x8004, EASY_CHAT_TYPE_INTERVIEW
+	setvar VAR_0x8005, 0
+	call Common_ShowEasyChatScreen
+	lock
+	faceplayer
+	switch VAR_RESULT
+	case 0, Route34_DayCare_EventScript_ClerkRejection
+	case 1, Route34_DayCare_EventScript_GivePichu
+	case 2, Route34_DayCare_EventScript_GiveCleffa
+	case 3, Route34_DayCare_EventScript_GiveIgglybuff
+	case 4, Route34_DayCare_EventScript_GiveTyrogue
+	case 5, Route34_DayCare_EventScript_GiveSmoochum
+	case 6, Route34_DayCare_EventScript_GiveElekid
+	case 7, Route34_DayCare_EventScript_GiveMagby
+	case 8, Route34_DayCare_EventScript_GiveMantyke
+	case 9, Route34_DayCare_EventScript_GiveBonsly
+	case 10, Route34_DayCare_EventScript_GiveHappiny
+	case 11, Route34_DayCare_EventScript_GiveMimeJr
+	case 12, Route34_DayCare_EventScript_GiveChikorita
+	case 13, Route34_DayCare_EventScript_GiveCyndaquil
+	case 14, Route34_DayCare_EventScript_GiveTotodile
+	case 15, Route34_DayCare_EventScript_GiveEevee
+	closemessage
+	release
+	end
+
+Route34_DayCare_EventScript_GiveChikorita::
+	giveoddegg 12
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	
+Route34_DayCare_EventScript_GiveCyndaquil::
+	giveoddegg 13
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	
+Route34_DayCare_EventScript_GiveTotodile::
+	giveoddegg 14
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	
+Route34_DayCare_EventScript_GiveEevee::
+	giveoddegg 15
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
+Route34_DayCare_EventScript_ClerkAfter::
+	msgbox Route34_DayCare_Text_ClerkAfter, MSGBOX_DEFAULT
+	msgbox Route34_DayCare_Text_OtherEggs, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route34_DayCare_EventScript_OtherEggs
+	closemessage
+	release
+	end
+	
+Route34_DayCare_EventScript_OtherEggs::
+	msgbox Route34_DayCare_Text_OtherEggsYes, MSGBOX_DEFAULT
+	clearflag FLAG_RECEIVED_ODD_EGG
+	closemessage
+	release
+	end
+
+//Capitolized EGGS - bug fix
+Route34_DayCare_Text_ClerkAfter:
+	.string "We see a lot of those EGGS around\n"
+	.string "here.\p"
+	.string "Something was different about that\n"
+	.string "one, though.$"
+
+Route34_DayCare_Text_OtherEggs:
+	.string "Do you think there may be other\n"
+	.string "ODD EGGS?$"
+	
+Route34_DayCare_Text_OtherEggsYes:
+	.string "OK, I will check with my DAD\n"
+	.string "for other ODD EGGS.$"
+
+//--------------------------------------------------------------
+//ADD INFINITE RARE CANDY OPTION OUTSIDE OF NUZLOCK
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\challenge_menu.c
+	case TAB_NUZLOCKE:
+    {
+        u8 nuzSel = *GetSelectionPtr(TAB_NUZLOCKE, ITEM_NUZLOCKE_NUZLOCKE);
+        switch (itemIndex)
+        {
+        case ITEM_NUZLOCKE_NUZLOCKE:
+        case ITEM_NUZLOCKE_NEXT:
+            return TRUE;
+        case ITEM_NUZLOCKE_RARE_CANDY:
+            return nuzSel >= 0;  // CHANGE "return nuzSel > 0" TO "return nuzSel >= 0"
+        default:
+            if (nuzSel == 1) // EASY — lock all sub-options except RARE_CANDY
+                return FALSE;
+            return nuzSel > 0;
+        }
+    }
+// Nuzlocke tab — decompose selection back to 3 bits (matches HnS encoding)
+    {
+        u8 nuzSel = *GetSelectionPtr(TAB_NUZLOCKE, ITEM_NUZLOCKE_NUZLOCKE);
+        cs->tx_Challenges_Nuzlocke         = (nuzSel >= 2) ? 1 : 0;
+        cs->tx_Nuzlocke_EasyMode           = (nuzSel == 1) ? 1 : 0;
+        cs->tx_Challenges_NuzlockeHardcore = (nuzSel == 3) ? 1 : 0;
+
+        if (nuzSel == 0) // OFF — clear sub-options // OFF — save RareCandy MOD
+        {
+            cs->tx_Nuzlocke_RareCandy     = !(*GetSelectionPtr(TAB_NUZLOCKE, ITEM_NUZLOCKE_RARE_CANDY)); //ADD LINE
+			cs->tx_Nuzlocke_SpeciesClause = 0;
+            cs->tx_Nuzlocke_ShinyClause   = 0;
+            cs->tx_Nuzlocke_Nicknaming    = 0;
+        }
+        else if (nuzSel == 1) // EASY — save RareCandy, clear clauses
+        {
+            cs->tx_Nuzlocke_RareCandy     = !(*GetSelectionPtr(TAB_NUZLOCKE, ITEM_NUZLOCKE_RARE_CANDY));
+            cs->tx_Nuzlocke_SpeciesClause = 0;
+            cs->tx_Nuzlocke_ShinyClause   = 0;
+            cs->tx_Nuzlocke_Nicknaming    = 0;
+
+//--------------------------------------------------------------
+//FIX EEVEE POKEDEX ()
+//--------------------------------------------------------------
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\pokemon\species_info\gen_1_families.h
+//    [SPECIES_EEVEE]
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
+							#if P_GEN_2_CROSS_EVOS
+								{EVO_ITEM, ITEM_SUN_STONE, SPECIES_ESPEON},
+								{EVO_ITEM, ITEM_MOON_STONE, SPECIES_UMBREON},
+                            #endif
+                            #if P_GEN_4_CROSS_EVOS
+								{EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LEAFEON},
+                                {EVO_ITEM, ITEM_ICE_STONE, SPECIES_GLACEON},
+                            #endif
+							#if P_GEN_6_CROSS_EVOS
+                                {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_SYLVEON},
+                            #endif
+							#if P_GEN_4_CROSS_EVOS
+
+                              #if IS_HNS
+							    //JOHTO LOCATIONS
+								{EVO_LEVEL, 0, SPECIES_LEAFEON, CONDITIONS({IF_IN_MAPSEC, MAPSEC_ILEX_FOREST})},
+                                {EVO_LEVEL, 0, SPECIES_GLACEON, CONDITIONS({IF_IN_MAPSEC, MAPSEC_ICE_PATH})},
+								//KANTO LOCATIONS
+								{EVO_LEVEL, 0, SPECIES_LEAFEON, CONDITIONS({IF_IN_MAPSEC, MAPSEC_VIRIDIAN_FOREST})},
+                                {EVO_LEVEL, 0, SPECIES_GLACEON, CONDITIONS({IF_IN_MAPSEC, MAPSEC_SEAFOAM_ISLANDS})},
+                              #else
+								//SINOH LOCATIONS
+                                {EVO_LEVEL, 0, SPECIES_LEAFEON, CONDITIONS({IF_IN_MAP, MAP_PETALBURG_WOODS})},
+                                {EVO_LEVEL, 0, SPECIES_GLACEON, CONDITIONS({IF_IN_MAP, MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM})},
+                              #endif
+                                
+                              //#if P_GEN_2_CROSS_EVOS
+
+                              //#endif
+                            #endif
+                            #if P_GEN_2_CROSS_EVOS
+                                {EVO_LEVEL, 0, SPECIES_ESPEON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD}, {IF_NOT_TIME, TIME_NIGHT})},
+                                {EVO_LEVEL, 0, SPECIES_UMBREON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD}, {IF_TIME, TIME_NIGHT})}
+                            #endif
+                            ),
