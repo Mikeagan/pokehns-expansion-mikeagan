@@ -75,6 +75,8 @@ GoldenrodDeptStore4_Pokemart:
 	.2byte ITEM_ZINC
 	.2byte ITEM_CARBOS
 	.2byte ITEM_HP_UP
+	.2byte ITEM_PP_UP
+	.2byte ITEM_PP_MAX
 	pokemartlistend
 
 GoldenrodDeptStore_Text_4FDirectory:
