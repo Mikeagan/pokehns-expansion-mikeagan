@@ -268,39 +268,6 @@ enum {
     HELP_COUNT
 };
 
-C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\Route34_DayCare_hns\scripts.h
-Route34_DayCare_Bookshelf1::
-	lock
-	msgbox Route34_DayCare_Text_Bookshelf1, MSGBOX_AUTOCLOSE
-	helpwindow HELP_DAYCARE1_WINDOW
-	helpwindow HELP_DAYCARE1_WINDOW2	//page 2
-	release
-	end
-
-Route34_DayCare_Bookshelf2::
-	lock
-	msgbox Route34_DayCare_Text_Bookshelf2, MSGBOX_AUTOCLOSE
-	helpwindow HELP_DAYCARE2_WINDOW
-	helpwindow HELP_DAYCARE2_WINDOW2	//page 2
-	release
-	end
-
-Route34_DayCare_Bookshelf3::
-	lock
-	msgbox Route34_DayCare_Text_Bookshelf3, MSGBOX_AUTOCLOSE
-	helpwindow HELP_DAYCARE3_WINDOW
-	helpwindow HELP_DAYCARE3_WINDOW2	//page 2
-	release
-	end
-
-Route34_DayCare_Bookshelf4::
-	lock
-	msgbox Route34_DayCare_Text_Bookshelf4, MSGBOX_AUTOCLOSE
-	helpwindow HELP_DAYCARE4_WINDOW
-	helpwindow HELP_DAYCARE4_WINDOW2	//page 2
-	release
-	end
-
 C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\help_window.h
 	[HELP_DAYCARE1_WINDOW] =
     {
@@ -427,6 +394,39 @@ C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\
         .descFont = FONT_SMALL,
         .headerColor = {0, 8, 3},
     },
+
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\Route34_DayCare_hns\scripts.h
+Route34_DayCare_Bookshelf1::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf1, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE1_WINDOW
+	helpwindow HELP_DAYCARE1_WINDOW2	//page 2
+	release
+	end
+
+Route34_DayCare_Bookshelf2::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf2, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE2_WINDOW
+	helpwindow HELP_DAYCARE2_WINDOW2	//page 2
+	release
+	end
+
+Route34_DayCare_Bookshelf3::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf3, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE3_WINDOW
+	helpwindow HELP_DAYCARE3_WINDOW2	//page 2
+	release
+	end
+
+Route34_DayCare_Bookshelf4::
+	lock
+	msgbox Route34_DayCare_Text_Bookshelf4, MSGBOX_AUTOCLOSE
+	helpwindow HELP_DAYCARE4_WINDOW
+	helpwindow HELP_DAYCARE4_WINDOW2	//page 2
+	release
+	end
 
 //--------------------------------------------------------------
 //GET ALL ODD EGGS
@@ -556,7 +556,7 @@ C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\chall
             cs->tx_Nuzlocke_Nicknaming    = 0;
 
 //--------------------------------------------------------------
-//FIX EEVEE POKEDEX ()
+//FIX EEVEE POKEDEX (ADD SUN & MOON STONE FOR ESPEON & UMBREON)
 //--------------------------------------------------------------
 C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\pokemon\species_info\gen_1_families.h
 //    [SPECIES_EEVEE]

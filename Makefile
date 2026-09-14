@@ -23,6 +23,7 @@ ifeq (hns, $(or $(BUILD), $(MAKECMDGOALS)))
 	TITLE       	:= POKEMON HNS
 	GAME_CODE   	:= BPEE
 	BUILD_NAME  	:= hns
+#	BUILD_NAME  	:= v2.0.5.M
 	MAP_VERSION 	:= hns
 endif
 endif
@@ -35,6 +36,7 @@ KEEP_TEMPS  ?= 0
 
 # `File name`.gba
 FILE_NAME := poke$(BUILD_NAME)
+# FILE_NAME := Pokemon_Heart_and_Soul_$(BUILD_NAME)
 BUILD_DIR := build
 
 # Compares the ROM to a checksum of the original - only makes sense using when non-modern
