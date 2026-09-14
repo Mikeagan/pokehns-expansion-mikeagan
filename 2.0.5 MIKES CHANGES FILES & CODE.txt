@@ -160,7 +160,7 @@ GoldenrodDeptStore4_Pokemart:
 	pokemartlistend
 
 //--------------------------------------------------------------
-//ADD ITEMS TO (SAFARI) MART
+//ADD ITEMS TO (VITAMIN GURU) MART
 //--------------------------------------------------------------
 C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\SafariZoneGate_hns\scripts.inc
 //ADD ITEM_PP_UP, ITEM_PP_MAX
