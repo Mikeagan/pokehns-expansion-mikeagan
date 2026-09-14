@@ -93,7 +93,23 @@ const struct HelpWindow gHelpWindowInfo[] =
                                 "TYROGUE's ability is GUTS.\n"
                                 "SMOOCHUM's ability is OBLIVIOUS.\n"
                                 "ELEKID's ability is STATIC.\n"
-                                "MAGBY's ability is FLAME BODY."
+                                "MAGBY's ability is FLAME BODY.\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE1_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON ABILITIES"),
+        .desc = COMPOUND_STRING("CHIKORITA's ability is OVERGROW.\n"
+								"CYNDAQUIL's ability is BLAZE.\n"
+								"TOTODILE's ability is TORRENT.\n"
+								"EEVEE's ability is RUN_AWAY.\n"
+								"MANTYKE's ability is SWIFT SWIM.\n"
+								"BONSLY's ability is STURDY.\n"
+								"HAPPINY's ability is NATURAL CURE.\n"
+								"MIME_JR's ability is SOUNDPROOF.\n"
                             ),
         .headerFont = FONT_NORMAL,
         .descFont = FONT_SMALL,
@@ -108,7 +124,23 @@ const struct HelpWindow gHelpWindowInfo[] =
                                 "TYROGUE is FIGHTING type.\n"
                                 "SMOOCHUM is ICE type.\n"
                                 "ELEKID is ELECTRIC type.\n"
-                                "MAGBY is FIRE type."
+                                "MAGBY is FIRE type.\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE2_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON TYPES"),
+        .desc = COMPOUND_STRING("CHIKORITA's is GRASS type.\n"
+								"CYNDAQUIL's is FIRE type.\n"
+								"TOTODILE's is WATER type.\n"
+								"EEVEE's is NORMAL type.\n"
+								"MANTYKE's is WATER type.\n"
+								"BONSLY's is ROCK type.\n"
+								"HAPPINY's is NORMAL type.\n"
+								"MIME_JR's is PSYCHIC type.\n"
                             ),
         .headerFont = FONT_NORMAL,
         .descFont = FONT_SMALL,
@@ -123,7 +155,24 @@ const struct HelpWindow gHelpWindowInfo[] =
                                 "TYROGUE says HIYAH.\n"
                                 "SMOOCHUM says EHEHE.\n"
                                 "ELEKID says OI, OI, OI.\n"
-                                "MAGBY says TCH."
+                                "MAGBY says TCH.\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE3_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON CRIES"),
+        .desc = COMPOUND_STRING("CHIKORITA says TCH.\n"
+								"CYNDAQUIL says GRAAAH.\n"
+								"TOTODILE says GWAH.\n"
+								"EEVEE says EEK.\n"
+								"MANTYKE says WAAAH.\n"
+								"BONSLY says URGH.\n"
+								"HAPPINY says SIGH.\n"
+								"MIME_JR says HMM.\n"
+								
                             ),
         .headerFont = FONT_NORMAL,
         .descFont = FONT_SMALL,
@@ -138,7 +187,23 @@ const struct HelpWindow gHelpWindowInfo[] =
                                 "TYROGUE TRAINS constantly.\n"
                                 "SMOOCHUM likes to SHOW off.\n"
                                 "ELEKID STORES up charge.\n"
-                                "MAGBY often ANGERS."
+                                "MAGBY often ANGERS.\p"
+                            ),
+        .headerFont = FONT_NORMAL,
+        .descFont = FONT_SMALL,
+        .headerColor = {0, 8, 3},
+    },
+	[HELP_DAYCARE4_WINDOW2] =
+    {
+        .header = COMPOUND_STRING("BABY POKéMON ACTIONS"),
+        .desc = COMPOUND_STRING("CHIKORITA likes to PLEASE.\n"
+								"CYNDAQUIL TRAINS hard.\n"
+								"TOTODILE ANGERS easily.\n"
+								"EEVEE likes CHANGE.\n"
+								"MANTYKE SINK low in water.\n"
+								"BONSLY likes to PRETEND.\n"
+								"HAPPINY has your TRUST.\n"
+								"MIME_JR always WORRY.\n"
                             ),
         .headerFont = FONT_NORMAL,
         .descFont = FONT_SMALL,

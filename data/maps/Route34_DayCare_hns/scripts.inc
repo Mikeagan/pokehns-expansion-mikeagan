@@ -5,6 +5,7 @@ Route34_DayCare_Bookshelf1::
 	lock
 	msgbox Route34_DayCare_Text_Bookshelf1, MSGBOX_AUTOCLOSE
 	helpwindow HELP_DAYCARE1_WINDOW
+	helpwindow HELP_DAYCARE1_WINDOW2	//page 2
 	release
 	end
 
@@ -12,6 +13,7 @@ Route34_DayCare_Bookshelf2::
 	lock
 	msgbox Route34_DayCare_Text_Bookshelf2, MSGBOX_AUTOCLOSE
 	helpwindow HELP_DAYCARE2_WINDOW
+	helpwindow HELP_DAYCARE2_WINDOW2	//page 2
 	release
 	end
 
@@ -19,6 +21,7 @@ Route34_DayCare_Bookshelf3::
 	lock
 	msgbox Route34_DayCare_Text_Bookshelf3, MSGBOX_AUTOCLOSE
 	helpwindow HELP_DAYCARE3_WINDOW
+	helpwindow HELP_DAYCARE3_WINDOW2	//page 2
 	release
 	end
 
@@ -26,6 +29,7 @@ Route34_DayCare_Bookshelf4::
 	lock
 	msgbox Route34_DayCare_Text_Bookshelf4, MSGBOX_AUTOCLOSE
 	helpwindow HELP_DAYCARE4_WINDOW
+	helpwindow HELP_DAYCARE4_WINDOW2	//page 2
 	release
 	end
 
@@ -73,6 +77,10 @@ Route34_DayCare_EventScript_Clerk::
 	case 9, Route34_DayCare_EventScript_GiveBonsly
 	case 10, Route34_DayCare_EventScript_GiveHappiny
 	case 11, Route34_DayCare_EventScript_GiveMimeJr
+	case 12, Route34_DayCare_EventScript_GiveChikorita
+	case 13, Route34_DayCare_EventScript_GiveCyndaquil
+	case 14, Route34_DayCare_EventScript_GiveTotodile
+	case 15, Route34_DayCare_EventScript_GiveEevee
 	closemessage
 	release
 	end
@@ -121,6 +129,22 @@ Route34_DayCare_EventScript_GiveMimeJr::
 	giveoddegg 11
 	goto Route34_DayCare_EventScript_Clerk_GaveEgg
 
+Route34_DayCare_EventScript_GiveChikorita::
+	giveoddegg 12
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	
+Route34_DayCare_EventScript_GiveCyndaquil::
+	giveoddegg 13
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	
+Route34_DayCare_EventScript_GiveTotodile::
+	giveoddegg 14
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+	
+Route34_DayCare_EventScript_GiveEevee::
+	giveoddegg 15
+	goto Route34_DayCare_EventScript_Clerk_GaveEgg
+
 Route34_DayCare_EventScript_Clerk_GaveEgg::
 	msgbox Route34_DayCare_Text_TakeCare, MSGBOX_DEFAULT
 	closemessage
@@ -147,6 +171,15 @@ Route34_DayCare_EventScript_ClerkRejection::
 
 Route34_DayCare_EventScript_ClerkAfter::
 	msgbox Route34_DayCare_Text_ClerkAfter, MSGBOX_DEFAULT
+	msgbox Route34_DayCare_Text_OtherEggs, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route34_DayCare_EventScript_OtherEggs
+	closemessage
+	release
+	end
+
+Route34_DayCare_EventScript_OtherEggs::
+	msgbox Route34_DayCare_Text_OtherEggsYes, MSGBOX_DEFAULT
+	clearflag FLAG_RECEIVED_ODD_EGG
 	closemessage
 	release
 	end
@@ -182,10 +215,18 @@ Route34_DayCare_Text_TakeCare:
 	.string "for the job. Take good care of it!$"
 
 Route34_DayCare_Text_ClerkAfter:
-	.string "We see a lot of those eggs around\n"
+	.string "We see a lot of those EGGS around\n"
 	.string "here.\p"
 	.string "Something was different about that\n"
 	.string "one, though.$"
+
+Route34_DayCare_Text_OtherEggs:
+	.string "Do you think there may be other\n"
+	.string "ODD EGGS?$"
+	
+Route34_DayCare_Text_OtherEggsYes:
+	.string "OK, I will check with my DAD\n"
+	.string "for other ODD EGGS.$"
 
 Route34_DayCare_EventScript_Ditto::
 	lock
