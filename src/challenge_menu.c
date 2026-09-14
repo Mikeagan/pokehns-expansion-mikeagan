@@ -1330,7 +1330,7 @@ static bool8 CheckConditions(u8 tab, u8 itemIndex)
         case ITEM_NUZLOCKE_NEXT:
             return TRUE;
         case ITEM_NUZLOCKE_RARE_CANDY:
-            return nuzSel > 0;
+            return nuzSel >= 0;
         default:
             if (nuzSel == 1) // EASY — lock all sub-options except RARE_CANDY
                 return FALSE;
@@ -2033,7 +2033,8 @@ static void Task_ConfirmSaveYes(u8 taskId)
 
         if (nuzSel == 0) // OFF — clear sub-options
         {
-            cs->tx_Nuzlocke_SpeciesClause = 0;
+            cs->tx_Nuzlocke_RareCandy     = !(*GetSelectionPtr(TAB_NUZLOCKE, ITEM_NUZLOCKE_RARE_CANDY));
+			cs->tx_Nuzlocke_SpeciesClause = 0;
             cs->tx_Nuzlocke_ShinyClause   = 0;
             cs->tx_Nuzlocke_Nicknaming    = 0;
         }
