@@ -11,6 +11,7 @@ YOU CAN GET ALL THE ODD EGGS YOU WANT (MUST GET A DIFFERENT ONE EACH TIME).
 ADD INFINITE RARE CANDY OPTION OUTSIDE OF NUZLOCK.  
 FIX EEVEE POKEDEX (ADD SUN & MOON STONE FOR ESPEON & UMBREON).  
 	Now you can see a method to get all of them. The original HNS methods still work, but don't show.  
+CHANGED VERSION ON TITLE SCREEN -> 2.0.6.M
 
 # About `pokemonHnS-expansion`
 
