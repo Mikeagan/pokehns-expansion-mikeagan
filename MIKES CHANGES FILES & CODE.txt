@@ -1,7 +1,8 @@
 //--------------------------------------------------------------
-//VERSION 2.0.5m
+//VERSION 2.0.6.M
 //--------------------------------------------------------------
-
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\graphics\title_screen\hns\press_start.png
+//ADD MY CURRENT VERSION NUMBER
 //--------------------------------------------------------------
 //ITEM PRICE CHANGES (EVO STONES MATCH HG&SS)
 //--------------------------------------------------------------
@@ -395,7 +396,7 @@ C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\
         .headerColor = {0, 8, 3},
     },
 
-C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\Route34_DayCare_hns\scripts.h
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\Route34_DayCare_hns\scripts.inc
 Route34_DayCare_Bookshelf1::
 	lock
 	msgbox Route34_DayCare_Text_Bookshelf1, MSGBOX_AUTOCLOSE

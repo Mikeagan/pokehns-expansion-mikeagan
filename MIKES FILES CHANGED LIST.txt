@@ -1,0 +1,17 @@
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\FILES CHANGED LIST.txt
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\MIKES CHANGES FILES & CODE.txt
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\graphics\title_screen\hns\press_start.png
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\help_window.h
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\items.h
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\data\pokemon\species_info\gen_1_families.h
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\challenge_menu.c
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\easy_chat.c
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\shop.c
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\src\scrcmd.c
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\GoldenrodCity_DepartmentStore_2F_hns\scripts.inc
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\GoldenrodCity_DepartmentStore_4F_hns\scripts.inc
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\NewBarkTown_Lab_hns\scripts.inc
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\Route34_DayCare_hns\scripts.inc
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\data\maps\SafariZoneGate_hns\scripts.inc
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\include\constants\pokemon.h
+C:\Users\micha\OneDrive\Desktop\gba-decomps\pokehns-expansion-mikeagan\include\constants\help_window.h
